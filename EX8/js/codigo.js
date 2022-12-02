@@ -15,20 +15,20 @@ function resultado() {
 
     switch (operacion) {
         case "+": 
-            document.getElementById("calc").value = Number(num1)+Number(num2);
+            document.getElementById("resultado").innerHTML = Number(num1)+Number(num2);
             break;
         case "-": 
-            document.getElementById("calc").value = Number(num1)-Number(num2);
+            document.getElementById("resultado").innerHTML = Number(num1)-Number(num2);
             break;
         case "*": 
-            document.getElementById("calc").value = Number(num1)*Number(num2);
+            document.getElementById("resultado").innerHTML = Number(num1)*Number(num2);
             break;
         case "/": 
-            document.getElementById("calc").value = Number(num1)/Number(num2);
+            document.getElementById("resultado").innerHTML = Number(num1)/Number(num2);
             break;
 
     default: 
-        document.getElementById("calc").value = "Error";
+        document.getElementById("resultado").innerHTML = "Error";
         break;
     }
 }
